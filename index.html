@@ -21,7 +21,17 @@
             <button id="resetBtn" class="btn btn-secondary">Reset</button>
         </div>
         
-        <button id="shotBtn" class="btn btn-shot" disabled>Record Shot</button>
+        <div class="mic-section">
+            <button id="micBtn" class="btn btn-mic" disabled>Enable Mic Detection</button>
+            <div class="mic-status" id="micStatus"></div>
+            <div class="sensitivity-control">
+                <label for="sensitivitySlider">Sound Sensitivity:</label>
+                <input type="range" id="sensitivitySlider" min="0" max="100" value="50" disabled>
+                <span id="sensitivityValue">50%</span>
+            </div>
+        </div>
+        
+        <button id="manualShotBtn" class="btn btn-shot" disabled>Record Shot (Manual)</button>
         
         <div class="shots-section">
             <h2>Recorded Shots</h2>
