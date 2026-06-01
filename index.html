@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shot Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shot Timer</h1>
+        
+        <div class="timer-display">
+            <div class="time" id="timeDisplay">90</div>
+            <div class="label">seconds</div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">Start</button>
+            <button id="pauseBtn" class="btn btn-secondary" disabled>Pause</button>
+            <button id="resetBtn" class="btn btn-secondary">Reset</button>
+        </div>
+        
+        <button id="shotBtn" class="btn btn-shot" disabled>Record Shot</button>
+        
+        <div class="shots-section">
+            <h2>Recorded Shots</h2>
+            <div class="shots-list" id="shotsList">
+                <p class="empty-message">No shots recorded yet</p>
+            </div>
+            <button id="clearBtn" class="btn btn-danger" style="display: none;">Clear All</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
